@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Geo-IP-Reverse.t
+lib/Geo/IP/Reverse.pm
