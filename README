@@ -1,9 +1,9 @@
-Geo-IP-Reverse version 0.01
+Net::IPFromZip version 0.01
 ===========================
 
 SYNOPSIS
 
-use Geo::IP::Reverse qw/reverse/;
+use Net::IPFromZip qw/reverse/;
 
 #looks for files in local dir or in /usr/local/share/GeoIP
 my \@ips = reverse("59715"); #enter zip code, returns list of associated ips in <30 seconds
@@ -14,13 +14,15 @@ my \@ips = reverse("59715"); #enter zip code, returns list of associated ips in 
 
 INSTALLATION
 
-cpan Geo::IP::Reverse
+cpan Net::IPFromZip
 
 You know what to do
 
 DEPENDENCIES
 
 This module requires Geo::IP, and the Geo::IP free downloadable databases found here (https://www.maxmind.com/en/opensource) or download the .csv.zip file from github.com/jk33/reverse-geo-ip
+
+Also the Text::CSV_XS module is required
 
 COPYRIGHT AND LICENCE
 

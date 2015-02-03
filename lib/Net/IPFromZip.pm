@@ -1,4 +1,4 @@
-package Geo::IP::Reverse;
+package Net::IPFromZip;
 
 use 5.018002;
 use strict;
@@ -106,11 +106,11 @@ __END__
 
 =head1 NAME
 
-Geo::IP::Reverse - find all ip addresses associated with a specific zip code
+Net::IPFromZip- find all ip addresses associated with a specific zip code
 
 =head1 SYNOPSIS
 
-  use Geo::IP::Reverse qw/reverse/;
+  use Net::IPFromZip qw/reverse/;
 
   #assuming that the .csv file is either in the local directory or in /usr/local/share/GeoIP
   my @ips = @{ reverse("59715") }; 
@@ -133,6 +133,8 @@ Being that the only meat of this module is the main reverse function, only one f
 =head1 SEE ALSO
 
 http://github.com/jk33/reverse-geo-ip - repository containing compressed csv databases, the originaly reverseFromCSV.pl file, and various misc scripts
+
+http://github.com/jk33/net-ipfromzip - repository with all the perl module source
 
 =head1 AUTHOR
 
